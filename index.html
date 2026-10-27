@@ -226,7 +226,7 @@
 };
       const translations = { ru: russian, en: english };
 
-      function setLanguage(language) {
+      function setLanguage(language, persist = false) {
         const translation = translations[language];
         document.documentElement.lang = language;
         document.title = translation.title;
@@ -242,10 +242,13 @@
         switcher.querySelectorAll('button').forEach(button => {
           button.setAttribute('aria-pressed', String(button.dataset.language === language));
         });
-        try { localStorage.setItem('az-language', language); } catch (_) {}
+        if (persist) {
+          try { localStorage.setItem('az-language', language); } catch (_) {}
+        }
       }
 
-      let language = 'ru';
+      const browserLanguage = navigator.languages?.[0] || navigator.language || 'en';
+      let language = /^ru(?:-|$)/i.test(browserLanguage) ? 'ru' : 'en';
       try {
         const savedLanguage = localStorage.getItem('az-language');
         if (savedLanguage === 'en' || savedLanguage === 'ru') language = savedLanguage;
@@ -253,7 +256,7 @@
       setLanguage(language);
       switcher.hidden = false;
       switcher.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', () => setLanguage(button.dataset.language));
+        button.addEventListener('click', () => setLanguage(button.dataset.language, true));
       });
     })();
   </script>

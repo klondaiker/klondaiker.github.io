@@ -14,8 +14,9 @@
   <meta property="og:image:alt" content="Александр Завгороднев">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="assets/alexander-zavgorodnev.jpg">
-  <link rel="icon" type="image/jpeg" href="assets/alexander-zavgorodnev.jpg">
-  <link rel="apple-touch-icon" href="assets/alexander-zavgorodnev.jpg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <style>
     :root {
       --background: 251, 250, 249;
@@ -168,6 +169,8 @@
     <button type="button" data-language="ru" lang="ru" aria-label="Русский" aria-pressed="true">RU</button>
     <span aria-hidden="true">/</span>
     <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+    <span aria-hidden="true">/</span>
+    <button type="button" data-language="ja" lang="ja" aria-label="日本語" aria-pressed="false">JA</button>
   </nav>
   <header>
     <img src="assets/alexander-zavgorodnev.jpg" width="128" height="128" class="avatar" alt="Александр Завгороднев">
@@ -182,6 +185,7 @@
     <h2 class="achievements-title" data-i18n="achievementsTitle">Достижения:</h2>
     <ul class="achievements">
       <li data-i18n="workAchievement">С 2022 по 2026 год, по данным Yandex Tracker, закрыл <strong>932</strong> задачи (<strong>91+</strong> эпиков) с суммарной оценкой <strong>777</strong>&nbsp;SP. Все задачи выполнены вручную мной или LLM под моим непосредственным контролем.</li>
+      <li data-i18n="architecture">Участвовал во всех сессиях уточнения и оценки задач, а также в обсуждении архитектурных решений.</li>
       <li data-i18n="education">Высшее техническое образование (Специальность: Инженер-программист)</li>
       <li data-i18n="hobbies">В прошлом бачатеро и баскетболист (1-ый разряд)</li>
       <li data-i18n="family">Муж и отец</li>
@@ -218,13 +222,33 @@
     "contacts": "You can find me on <a href=\"https://t.me/klondaiker\">Telegram</a>, <a href=\"https://github.com/klondaiker\">GitHub</a>, <a href=\"https://vk.ru/happy_klondaiker\">VK</a>, <a href=\"https://x.com/klondaiker\">X</a> and <a href=\"https://www.instagram.com/happy_klondaiker/\">Instagram</a>.<br>\n    Email me at <a href=\"mailto:klondaiker@bk.ru\">klondaiker@bk.ru</a> or call <a href=\"tel:+79674712406\">+7 (967) 471-24-06</a>.",
     "achievementsTitle": "Achievements:",
     "workAchievement": "From 2022 to 2026, according to Yandex Tracker, I closed <strong>932</strong> issues (across <strong>91+</strong> epics) totalling <strong>777</strong>&nbsp;SP.<br>All issues were completed manually by me or by an LLM under my direct supervision.",
+    "architecture": "Participated in every backlog refinement session and in discussions of architectural decisions.",
     "education": "Technical university degree (specialization: Software Engineering)",
     "hobbies": "Former bachata dancer and basketball player",
     "family": "Husband and father",
     "instagramNote": ""
   }
 };
-      const translations = { ru: russian, en: english };
+      const japanese = {
+  "title": "アレクサンドル・ザヴゴロドネフ",
+  "description": "アレクサンドル・ザヴゴロドネフ。2015年から開発に携わる、AI・Ruby・Rustのシニアエンジニア。現在はTeachbaseを開発。EC、CRM、LMSプラットフォームの開発経験があります。",
+  "imageAlt": "アレクサンドル・ザヴゴロドネフ",
+  "switchLabel": "表示言語",
+  "strings": {
+    "name": "<span class=\"initial\">ア</span>レクサンドル・<span class=\"initial\">ザ</span>ヴゴロドネフ",
+    "intro": "こんにちは 👋<br>2015年から開発に携わる<a href=\"https://career.habr.com/happy-klondaiker\">AI・Ruby・Rustのシニアエンジニア</a>です。<br>現在は<a href=\"https://teachbase.ru\">@teachbase</a>の開発に取り組んでいます。<br>これまでに<a href=\"https://kiiiosk.store\">EC</a>や<a href=\"https://onelec.ru\">CRM</a>プラットフォームの開発も手がけてきました。",
+    "contacts": "連絡先は<a href=\"https://t.me/klondaiker\">Telegram</a>、<a href=\"https://github.com/klondaiker\">GitHub</a>、<a href=\"https://vk.ru/happy_klondaiker\">VK</a>、<a href=\"https://x.com/klondaiker\">X</a>、<a href=\"https://www.instagram.com/happy_klondaiker/\">Instagram</a>です。<br>メールは<a href=\"mailto:klondaiker@bk.ru\">klondaiker@bk.ru</a>、お電話は<a href=\"tel:+79674712406\">+7 (967) 471-24-06</a>まで。",
+    "achievementsTitle": "実績：",
+    "workAchievement": "2022年から2026年にかけて、Yandex Tracker上で<strong>932</strong>件の課題（<strong>91+</strong>件のエピック）をクローズしました。見積もりの合計は<strong>777</strong>&nbsp;SPです。すべての課題は、私自身の手作業、または私の直接の監督下でLLMを使用して対応しました。",
+    "architecture": "すべてのバックログリファインメント（課題の明確化・見積もり）と、アーキテクチャ上の意思決定に関する議論に参加しました。",
+    "education": "工学系の大学を卒業（専攻：ソフトウェア工学）",
+    "hobbies": "以前はバチャータダンサーで、バスケットボール選手としても活動（ロシアのスポーツ等級1級）",
+    "family": "夫であり、父親でもあります。",
+    "instagramNote": ""
+  }
+};
+      const translations = { ru: russian, en: english, ja: japanese };
+      const supportedLanguages = Object.keys(translations);
 
       function setLanguage(language, persist = false) {
         const translation = translations[language];
@@ -236,6 +260,7 @@
         ogImageAlt.content = translation.imageAlt;
         avatar.alt = translation.imageAlt;
         switcher.setAttribute('aria-label', translation.switchLabel);
+        document.querySelector('footer').hidden = !translation.strings.instagramNote;
         translatedElements.forEach(element => {
           element.innerHTML = translation.strings[element.dataset.i18n];
         });
@@ -247,11 +272,11 @@
         }
       }
 
-      const browserLanguage = navigator.languages?.[0] || navigator.language || 'en';
-      let language = /^ru(?:-|$)/i.test(browserLanguage) ? 'ru' : 'en';
+      const browserLanguage = (navigator.languages?.[0] || navigator.language || 'en').toLowerCase().split('-')[0];
+      let language = supportedLanguages.includes(browserLanguage) ? browserLanguage : 'en';
       try {
         const savedLanguage = localStorage.getItem('az-language');
-        if (savedLanguage === 'en' || savedLanguage === 'ru') language = savedLanguage;
+        if (supportedLanguages.includes(savedLanguage)) language = savedLanguage;
       } catch (_) {}
       setLanguage(language);
       switcher.hidden = false;

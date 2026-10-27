@@ -1,0 +1,7 @@
+Ruby programming language logo — blue variant
+Original logo: Copyright © 2006 Yukihiro Matsumoto, Ruby Visual Identity Team.
+Source: https://www.ruby-lang.org/en/about/logo/
+Vector source: https://www.ruby-lang.org/images/header-ruby-logo.svg
+Modification: colors changed from red to blue; PNG and ICO icons rendered from the modified SVG.
+License: Creative Commons Attribution-ShareAlike 2.5
+https://creativecommons.org/licenses/by-sa/2.5/

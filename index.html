@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Александр Завгороднев</title>
+  <meta name="description" content="Александр Завгороднев — Senior AI Ruby/Rust разработчик с 2015 года. В разное время занимался e-commerce, CRM и LMS-платформами.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Александр Завгороднев">
+  <meta property="og:description" content="Senior AI Ruby/Rust разработчик с 2015 года. В разное время занимался e-commerce, CRM и LMS-платформами.">
+  <meta property="og:image" content="assets/alexander-zavgorodnev.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="640">
+  <meta property="og:image:alt" content="Александр Завгороднев">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="assets/alexander-zavgorodnev.jpg">
+  <link rel="icon" type="image/jpeg" href="assets/alexander-zavgorodnev.jpg">
+  <link rel="apple-touch-icon" href="assets/alexander-zavgorodnev.jpg">
+  <style>
+    :root {
+      --background: 251, 250, 249;
+      --ink: 35, 28, 51;
+      --accent: 0, 116, 228;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: 27, 39, 51;
+        --ink: 236, 233, 230;
+        --accent: 80, 162, 255;
+      }
+    }
+    html {
+      color-scheme: light dark;
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      margin: 0;
+      padding: 4.5rem 2rem;
+      background-color: rgb(var(--background));
+      color: rgb(var(--ink));
+      font-family: -apple-system, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 18px;
+      line-height: 1.65;
+    }
+    header, article {
+      max-width: 40rem;
+      margin-inline: auto;
+    }
+    body.home header {
+      max-width: 52rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    header p {
+      color: rgba(var(--ink), .66);
+      text-wrap: balance;
+    }
+    header a, header a:visited {
+      color: rgba(var(--ink), .66);
+      text-decoration-color: rgba(var(--ink), .15);
+    }
+    img.avatar {
+      display: block;
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    h1, h2 {
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+    body.home h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(1.5rem, 4.5vw, 1.9rem);
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    h1 .initial { color: rgb(var(--accent)); }
+    h2 {
+      margin: 3rem 0 .5rem;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -.01em;
+    }
+    p { margin: 0 0 1rem; }
+    .achievements-title { font-size: 1rem; }
+    .achievements {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+      font-size: 16px;
+      list-style-type: disc;
+    }
+    .achievements strong { color: rgb(var(--accent)); }
+    a, a:visited { color: rgb(var(--accent)); }
+    a {
+      text-decoration-thickness: .08em;
+      text-underline-offset: .15em;
+      transition: color .15s cubic-bezier(.33, 1, .68, 1);
+    }
+    body.home a { white-space: nowrap; }
+    article img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-block: .5rem;
+      border-radius: 8px;
+    }
+    footer {
+      max-width: 40rem;
+      margin: 4.5rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(var(--ink), .15);
+      font-size: .85rem;
+      color: rgba(var(--ink), .66);
+    }
+    .language-switch {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      color: rgba(var(--ink), .4);
+      font-size: 12px;
+    }
+    .language-switch[hidden] { display: none; }
+    .language-switch button {
+      padding: .25rem .375rem;
+      border: 0;
+      background: transparent;
+      color: rgba(var(--ink), .66);
+      font: inherit;
+      cursor: pointer;
+    }
+    .language-switch button[aria-pressed="true"] {
+      color: rgb(var(--accent));
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: .25em;
+    }
+    .language-switch button:hover { color: rgb(var(--accent)); }
+    .language-switch button:focus-visible {
+      outline: 2px solid rgb(var(--accent));
+      outline-offset: 2px;
+    }
+    @media (hover: hover) {
+      a:hover { color: rgb(var(--ink)); }
+      header a:hover { color: rgb(var(--accent)); }
+    }
+    @media screen and (max-width: 40rem) {
+      body {
+        padding: 2rem 1.5rem;
+        font-size: 17px;
+        word-wrap: break-word;
+      }
+      .language-switch { top: .5rem; right: 1.5rem; }
+      img.avatar { width: 104px; height: 104px; }
+      header p { text-align: left; }
+      body.home a { white-space: normal; }
+      h2 { margin-top: 2rem; }
+    }
+  </style>
+</head>
+<body class="home">
+  <nav class="language-switch" aria-label="Язык страницы" hidden>
+    <button type="button" data-language="ru" lang="ru" aria-label="Русский" aria-pressed="true">RU</button>
+    <span aria-hidden="true">/</span>
+    <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+  </nav>
+  <header>
+    <img src="assets/alexander-zavgorodnev.jpg" width="128" height="128" class="avatar" alt="Александр Завгороднев">
+    <h1 data-i18n="name"><span class="initial">А</span>ЛЕКСАНДР <span class="initial">З</span>АВГОРОДНЕВ</h1>
+    <p class="header" data-i18n="intro">Привет 👋 <br> Я <a href="https://career.habr.com/happy-klondaiker">Senior AI Ruby/Rust разработчик</a> с 2015 года.<br>
+    В данный момент работаю над <a href="https://teachbase.ru">@teachbase</a>.<br>
+    Также занимался <a href="https://kiiiosk.store">e-commerce</a> и <a href="https://onelec.ru">CRM</a>.</p>
+  </header>
+  <article>
+    <p data-i18n="contacts">Меня можно найти в <a href="https://t.me/klondaiker">Telegram</a>, <a href="https://github.com/klondaiker">GitHub</a>, <a href="https://vk.ru/happy_klondaiker">VK</a>, <a href="https://x.com/klondaiker">X</a>, <a href="https://www.instagram.com/happy_klondaiker/">Instagram<sup>*</sup></a>.<br>
+    Напишите мне на <a href="mailto:klondaiker@bk.ru">klondaiker@bk.ru</a> или позвоните: <a href="tel:+79674712406">+7 (967) 471-24-06</a>.</p>
+    <h2 class="achievements-title" data-i18n="achievementsTitle">Достижения:</h2>
+    <ul class="achievements">
+      <li data-i18n="workAchievement">С 2022 по 2026 год, по данным Yandex Tracker, закрыл <strong>932</strong> задачи (<strong>91+</strong> эпиков) с суммарной оценкой <strong>777</strong>&nbsp;SP. Все задачи выполнены вручную мной или LLM под моим непосредственным контролем.</li>
+      <li data-i18n="education">Высшее техническое образование (Специальность: Инженер-программист)</li>
+      <li data-i18n="hobbies">В прошлом бачатеро и баскетболист (1-ый разряд)</li>
+      <li data-i18n="family">Муж и отец</li>
+    </ul>
+  </article>
+  <footer>
+    <p data-i18n="instagramNote">* Instagram принадлежит компании Meta Platforms Inc., признанной экстремистской организацией, деятельность которой запрещена на территории РФ.</p>
+  </footer>
+  <script>
+    (() => {
+      const switcher = document.querySelector('.language-switch');
+      const translatedElements = [...document.querySelectorAll('[data-i18n]')];
+      const description = document.querySelector('meta[name="description"]');
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDescription = document.querySelector('meta[property="og:description"]');
+      const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
+      const avatar = document.querySelector('img.avatar');
+      const russian = {
+        title: document.title,
+        description: description.content,
+        ogDescription: ogDescription.content,
+        imageAlt: avatar.alt,
+        switchLabel: switcher.getAttribute('aria-label'),
+        strings: Object.fromEntries(translatedElements.map(element => [element.dataset.i18n, element.innerHTML]))
+      };
+      const english = {
+  "title": "Alexander Zavgorodnev",
+  "description": "Alexander Zavgorodnev — Senior AI Ruby/Rust developer, coding since 2015. Currently working on Teachbase. Experience with e-commerce, CRM and LMS platforms.",
+  "imageAlt": "Alexander Zavgorodnev",
+  "switchLabel": "Page language",
+  "strings": {
+    "name": "<span class=\"initial\">A</span>LEXANDER <span class=\"initial\">Z</span>AVGORODNEV",
+    "intro": "Hi 👋<br>I'm a <a href=\"https://career.habr.com/happy-klondaiker\">Senior AI Ruby/Rust developer</a>. I've been coding since 2015.<br>\n    I'm currently working on <a href=\"https://teachbase.ru\">@teachbase</a>.<br>\n    I've also worked on <a href=\"https://kiiiosk.store\">e-commerce</a> and <a href=\"https://onelec.ru\">CRM</a> platforms.",
+    "contacts": "You can find me on <a href=\"https://t.me/klondaiker\">Telegram</a>, <a href=\"https://github.com/klondaiker\">GitHub</a>, <a href=\"https://vk.ru/happy_klondaiker\">VK</a>, <a href=\"https://x.com/klondaiker\">X</a> and <a href=\"https://www.instagram.com/happy_klondaiker/\">Instagram</a>.<br>\n    Email me at <a href=\"mailto:klondaiker@bk.ru\">klondaiker@bk.ru</a> or call <a href=\"tel:+79674712406\">+7 (967) 471-24-06</a>.",
+    "achievementsTitle": "Achievements:",
+    "workAchievement": "From 2022 to 2026, according to Yandex Tracker, I closed <strong>932</strong> issues (across <strong>91+</strong> epics) totalling <strong>777</strong>&nbsp;SP.<br>All issues were completed manually by me or by an LLM under my direct supervision.",
+    "education": "Technical university degree (specialization: Software Engineering)",
+    "hobbies": "Former bachata dancer and basketball player",
+    "family": "Husband and father",
+    "instagramNote": ""
+  }
+};
+      const translations = { ru: russian, en: english };
+
+      function setLanguage(language) {
+        const translation = translations[language];
+        document.documentElement.lang = language;
+        document.title = translation.title;
+        description.content = translation.description;
+        ogTitle.content = translation.title;
+        ogDescription.content = translation.ogDescription || translation.description;
+        ogImageAlt.content = translation.imageAlt;
+        avatar.alt = translation.imageAlt;
+        switcher.setAttribute('aria-label', translation.switchLabel);
+        translatedElements.forEach(element => {
+          element.innerHTML = translation.strings[element.dataset.i18n];
+        });
+        switcher.querySelectorAll('button').forEach(button => {
+          button.setAttribute('aria-pressed', String(button.dataset.language === language));
+        });
+        try { localStorage.setItem('az-language', language); } catch (_) {}
+      }
+
+      let language = 'ru';
+      try {
+        const savedLanguage = localStorage.getItem('az-language');
+        if (savedLanguage === 'en' || savedLanguage === 'ru') language = savedLanguage;
+      } catch (_) {}
+      setLanguage(language);
+      switcher.hidden = false;
+      switcher.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', () => setLanguage(button.dataset.language));
+      });
+    })();
+  </script>
+</body>
+</html>
